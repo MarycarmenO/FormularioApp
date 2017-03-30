@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:visibility="visible"
+    tools:context="com.practica1gmail.formularioapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetra"
+        android:textSize="@dimen/TextViewNombreTamaño"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/datePicker2"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/Direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="DIRECCION"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetra"
+        android:textSize="@dimen/TextViewNombreTamaño"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignStart="@+id/Nombre" />
+    <TextView
+        android:id="@+id/Telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="TELEFONO"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetra"
+        android:textSize="@dimen/TextViewNombreTamaño"
+        android:layout_below="@+id/Direccion"
+        android:layout_alignStart="@+id/Direccion" />
+
+    <TextView
+        android:id="@+id/FechaN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="FECHA DE NACIMIENTO"
+        android:textStyle="bold"
+        android:textColor="@color/colorLetra"
+        android:textSize="@dimen/TextViewNombreTamaño"
+        android:layout_below="@+id/Telefono"
+        android:layout_alignStart="@+id/Telefono" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginStart="18dp"
+        android:layout_alignBaseline="@+id/Nombre"
+        android:layout_alignBottom="@+id/Nombre"
+        android:layout_toEndOf="@+id/Direccion" />
+
+    <EditText
+        android:id="@+id/editTextDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/Direccion"
+        android:layout_alignBottom="@+id/Direccion"
+        android:layout_alignStart="@+id/editTextNombre" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_alignBaseline="@+id/Telefono"
+        android:layout_alignBottom="@+id/Telefono"
+        android:layout_alignStart="@+id/editTextDireccion" />
+
+    <DatePicker
+        android:id="@+id/datePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:scaleX=".9"
+        android:scaleY=".5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Telefono" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="ENVIAR"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Telefono"
+        android:textSize="@dimen/TextViewNombreTamaño"
+        android:textColor="@color/colorLetraBoton"
+        />
+
+
+</RelativeLayout>
